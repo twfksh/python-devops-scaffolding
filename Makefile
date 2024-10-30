@@ -13,8 +13,11 @@ lint:
 
 test:
 	# setup test
+	python -m pytest -vv --cov=mylib test/test_logic.py
 
 deploy:
 	# setup deoply
 
 all: install format lint test deploy
+
+.PHONY: all test # make test does not work without this line
