@@ -9,6 +9,7 @@ format:
 
 lint:
 	# linting setup using pylint or flake8 or ruff
+	pylint --disable=R,C *.py mylib/*.py
 
 test:
 	# setup test
